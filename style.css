@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden; /* Disable scrolling for the entire page */
+}
+
+.console-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+
+.console-display {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #000;
+    overflow-y: scroll; /* Enable scrolling only for this element */
+    border: 1px solid #00ff00;
+    position: relative; /* Relative positioning for the index */
+}
+
+.console-index {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    padding-right: 30px;
+    background-color: transparent;
+    color: #00ff00;
+}
+
+.console-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+label {
+    color: #00ff00;
+    margin-right: 5px;
+}
+
+input {
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+/* For the inventory */
+
+.inventory-terminal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #00ff00;
+}
+
+.inventory-header {
+    background-color: #00ff00;
+    color: #000;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.inventory-display {
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.inventory-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.inventory-input label {
+    color: #00ff00;
+    margin-right: 5px;
+}
+
+.inventory-input input {
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.close-button {
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+}

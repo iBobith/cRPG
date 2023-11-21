@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cRPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="console-container" id="main-console-container">
+        <div class="console-display" id="console-display">
+            <!-- Display area for game information -->
+        </div>
+        <div class="console-index" id="console-index">
+            <!-- Index area for commands -->
+            <p>Commands: start, options, menu, inventory</p>
+        </div>
+        <div class="console-input">
+            <label for="command-line">> </label>
+            <input type="text" id="command-line" placeholder="Type your command here...">
+        </div>
+    </div>
+
+    <!-- Separate terminal for inventory -->
+    <div class="inventory-terminal" id="inventory-terminal">
+        <div class="inventory-header">
+            <span>Inventory</span>
+            <span class="close-button" onclick="closeInventoryTerminal()">X</span>
+        </div>
+        <div class="inventory-display" id="inventory-display">
+            <!-- Display area for inventory information -->
+        </div>
+        <div class="inventory-input">
+            <label for="inventory-command-line">> </label>
+            <input type="text" id="inventory-command-line" placeholder="Type your command here...">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
