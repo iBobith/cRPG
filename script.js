@@ -121,9 +121,13 @@ document.addEventListener('DOMContentLoaded', function () {
         displayMessage('Preparing game...');
     
         // Add additional logic as needed for your game's initialization
+        console.log("I'm starting!")
     }
 
     function showOptionsScreen() {
+        // Clear the main menu text
+        consoleDisplay.innerHTML = '';
+
         // Placeholder for options screen logic
         displayMessage('Options: Option 1, Option 2, Option 3');
     }
@@ -148,3 +152,5 @@ document.addEventListener('DOMContentLoaded', function () {
         isMenuConfirmationPending = false;
     }
 });
+
+
